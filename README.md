@@ -22,6 +22,11 @@ Deployment
 - 📦 [NPM](https://www.npmjs.com/) for packaging and distribution
 - 🚀 [Github Pages](https://pages.github.com/) for hosting Storybook instance
 
+Maintenance
+
+- 🤖 [Dependabot](https://dependabot.com/) for automatic dependency updates
+- 🐕 [Snyk](https://snyk.io/) for dependency vulnerability reporting
+
 ## Install
 
 ```bash

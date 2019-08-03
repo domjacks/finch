@@ -1,13 +1,26 @@
-import React, { FC } from 'react';
+import React, { SFC } from 'react';
 import styled from 'styled-components';
+
+type ButtonProps = {
+  onClick: () => void;
+};
 
 const StyledButton = styled.button`
   font-size: 30px;
-  border: solid white;
+  color: white;
+  border: none;
+  background-color: lightblue;
+  padding: 5px;
 `;
 
-export const Button: FC<{}> = ({ children }) => {
-  return <StyledButton>{children}</StyledButton>;
+/**
+ * Button component
+ */
+export const Button: SFC<ButtonProps> = ({
+  onClick: handleClick,
+  children,
+}) => {
+  return <StyledButton onClick={handleClick}>{children}</StyledButton>;
 };
 
 export default Button;

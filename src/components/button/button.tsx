@@ -2,6 +2,9 @@ import React, { SFC } from 'react';
 import styled from 'styled-components';
 
 type ButtonProps = {
+  /**
+   * Function to call when button is clicked
+   **/
   onClick: () => void;
 };
 
@@ -14,7 +17,7 @@ const StyledButton = styled.button`
 `;
 
 /**
- * Button component
+ * Button component.
  */
 export const Button: SFC<ButtonProps> = ({
   onClick: handleClick,

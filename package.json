@@ -25,7 +25,7 @@
     "pretest": "npm run compile",
     "posttest": "npm run check",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o ./docs"
+    "build-storybook": "build-storybook -o ./public"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",

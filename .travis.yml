@@ -1,0 +1,21 @@
+language: node_js
+cache:
+  directories:
+    - ~/.npm
+notifications:
+  email:
+    on_success: always
+    on_failure: always
+node_js:
+  - '10'
+script:
+  - npm run build-storybook
+deploy:
+  provider: pages
+  skip-cleanup: true
+  keep-history: true
+  github-token: $GITHUB_TOKEN
+  local-dir: public
+  target-branch: master
+  on:
+    branch: gh-pages

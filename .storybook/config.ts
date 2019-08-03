@@ -1,11 +1,13 @@
 import { configure, addDecorator, addParameters } from '@storybook/react';
 import { create } from '@storybook/theming';
 import { withA11y } from '@storybook/addon-a11y';
+import { withInfo } from '@storybook/addon-info';
 
 addDecorator(withA11y);
+addDecorator(withInfo({ inline: true }));
 
 const theme = create({
-  base: 'dark',
+  base: 'light',
   brandTitle: '🐦 Finch Design System',
   brandUrl: 'https://github.com/domjacks/finch',
 });

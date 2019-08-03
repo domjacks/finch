@@ -7,6 +7,20 @@
 
 An opinionated Design System.
 
+## Tech Stack
+
+Building components
+
+- 🔵 [Typescript](https://www.typescriptlang.org/) for type-safe superset of Javascript
+- ⚛️ [React](https://reactjs.org/) declarative component-centric UI
+- 💅 [Styled-components](https://www.styled-components.com/) for component-scoped styling
+- 📚 [Storybook](https://storybook.js.org) for UI component development
+
+Deployment
+
+- 📦 [NPM](https://www.npmjs.com/) for packaging and distribution
+- 🚀 [Github Pages](https://pages.github.com/) for hosting Storybook instance
+
 ## Install
 
 ```bash

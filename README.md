@@ -6,3 +6,23 @@
 [![Licence](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 An opinionated Design System.
+
+## Install
+
+```bash
+npm i --save finch-design-system
+```
+
+## Usage
+
+```jsx
+import React, { Component } from 'react';
+
+import { MyComponent } from 'finch-design-system';
+
+class App extends Component {
+  render() {
+    return <MyComponent />;
+  }
+}
+```

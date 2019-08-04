@@ -20,6 +20,7 @@ Building components
 Deployment
 
 - 📦 [NPM](https://www.npmjs.com/) for packaging and distribution
+- 🚥 [Travis CI](https://travis-ci.org) for continuous integration
 - 🚀 [Github Pages](https://pages.github.com/) for hosting Storybook instance
 
 Maintenance

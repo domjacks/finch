@@ -1,12 +1,12 @@
-import React, { SFC } from 'react';
+import React, { FC } from 'react';
 import styled from 'styled-components';
 
-type ButtonProps = {
+interface Button {
   /**
    * Function to call when button is clicked
-   **/
+   */
   onClick: () => void;
-};
+}
 
 const StyledButton = styled.button`
   font-size: 30px;
@@ -19,11 +19,6 @@ const StyledButton = styled.button`
 /**
  * Button component.
  */
-export const Button: SFC<ButtonProps> = ({
-  onClick: handleClick,
-  children,
-}) => {
+export const Button: FC<Button> = ({ onClick: handleClick, children }) => {
   return <StyledButton onClick={handleClick}>{children}</StyledButton>;
 };
-
-export default Button;

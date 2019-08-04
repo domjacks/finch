@@ -21,9 +21,15 @@ addParameters({
 });
 
 // automatically import all files ending in *.stories.js
-const req = require.context('../src/components/', true, /stories\.tsx$/);
+const componentStories = require.context(
+  `../src/components/`,
+  true,
+  /stories\.tsx$/
+);
+const tokenStories = require.context(`../src/tokens/`, true, /stories\.tsx$/);
 function loadStories() {
-  req.keys().forEach(filename => req(filename));
+  componentStories.keys().forEach(filename => componentStories(filename));
+  tokenStories.keys().forEach(filename => tokenStories(filename));
 }
 
 configure(loadStories, module);

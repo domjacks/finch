@@ -25,10 +25,12 @@
     "pretest": "npm run compile",
     "posttest": "npm run check",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o ./public"
+    "build-storybook": "build-storybook -o ./public",
+    "snapshot": "percy-storybook --widths=320,1280 --build_dir=public"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
+    "@percy/storybook": "^3.1.0",
     "@storybook/addon-a11y": "^5.1.10",
     "@storybook/addon-actions": "^5.1.10",
     "@storybook/addon-info": "^5.1.10",

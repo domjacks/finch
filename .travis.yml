@@ -8,7 +8,8 @@ node_js:
 script:
   - npm run build-storybook
 after_success:
-  - test $TRAVIS_BRANCH = "master" && npm run snapshot
+  - npm run snapshot
+  if: $TRAVIS_PULL_REQUEST == “false” && $TRAVIS_BRANCH == “master”
 branches:
   only:
     - master

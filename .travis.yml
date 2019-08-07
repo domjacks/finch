@@ -1,7 +1,4 @@
 language: node_js
-cache:
-  directories:
-    - ~/.npm
 notifications:
   email:
     on_success: always
@@ -10,6 +7,11 @@ node_js:
   - '10'
 script:
   - npm run build-storybook
+after_success:
+  - $PERCY_TOKEN npm run snapshot
+branches:
+  only:
+    - master
 deploy:
   provider: pages
   skip-cleanup: true

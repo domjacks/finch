@@ -2,6 +2,7 @@
 
 [![Storybook](https://cdn.jsdelivr.net/gh/storybooks/brand@master/badge/badge-storybook.svg)](https://domjacks.github.io/finch)
 [![Build Status](https://travis-ci.org/domjacks/finch.svg?branch=master)](https://travis-ci.org/domjacks/finch)
+![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)
 [![npm: finch-design-system](https://img.shields.io/npm/v/finch-design-system)](https://www.npmjs.com/package/finch-design-system)
 [![Known Vulnerabilities](https://snyk.io//test/github/domjacks/finch/badge.svg?targetFile=package.json)](https://snyk.io//test/github/domjacks/finch?targetFile=package.json)
 [![Code Style: Google](https://img.shields.io/badge/code%20style-google-blueviolet.svg)](https://github.com/google/gts)

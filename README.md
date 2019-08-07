@@ -29,6 +29,7 @@ Maintenance
 
 - 🤖 [Dependabot](https://dependabot.com/) for automatic dependency updates
 - 🐕 [Snyk](https://snyk.io/) for dependency vulnerability reporting
+- 🦔 [Percy](https://percy.io/) for visual testing as a service
 
 ## Install
 

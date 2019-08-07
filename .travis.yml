@@ -8,7 +8,7 @@ node_js:
 script:
   - npm run build-storybook
 after_success:
-  - $PERCY_TOKEN npm run snapshot
+  - npm run snapshot
 branches:
   only:
     - master

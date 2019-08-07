@@ -8,7 +8,7 @@ node_js:
 script:
   - npm run build-storybook
 after_success:
-  - npm run snapshot
+  - test $TRAVIS_PULL_REQUEST != “false” && npm run snapshot
 branches:
   only:
     - master

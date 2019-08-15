@@ -35,18 +35,23 @@ const Circle: FC<CircleProps> = ({ colour }) => {
 storiesOf('Tokens | Colours', module).add('Palette', () => (
   <Container>
     <StyledParagraph colour={colors.light.body}>Light</StyledParagraph>
+    <StyledParagraph colour={colors.light.body}>Dark</StyledParagraph>
+
     <Container colour={colors.light.accent}>
       <Circle colour={colors.light.primary} />
       <StyledParagraph colour={colors.light.body}>Primary</StyledParagraph>
+      <Circle colour={colors.light.secondary} />
+      <StyledParagraph colour={colors.light.body}>Secondary</StyledParagraph>
       <Circle colour={colors.light.body} />
       <StyledParagraph colour={colors.light.body}>Body</StyledParagraph>
     </Container>
-    <StyledParagraph colour={colors.light.body}>Dark</StyledParagraph>
 
     <Container colour={colors.dark.accent}>
       <Circle colour={colors.dark.primary} />
       <StyledParagraph colour={colors.dark.body}>Primary</StyledParagraph>
-      <Circle colour="white" />
+      <Circle colour={colors.dark.secondary} />
+      <StyledParagraph colour={colors.dark.body}>Secondary</StyledParagraph>
+      <Circle colour={colors.dark.body} />
       <StyledParagraph colour={colors.dark.body}>Body</StyledParagraph>
     </Container>
   </Container>

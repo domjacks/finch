@@ -2,17 +2,19 @@ import React, { FC } from 'react';
 import styled from 'styled-components';
 import { font, colors } from '../../tokens';
 
+interface ParagraphProps {
+  className?: string;
+}
+
 const StyledParagraph = styled.p`
   ${font}
 
   font-size: 20px;
-
-  color: ${colors.light.primary};
 `;
 
 /**
  * Paragraph component.
  */
-export const Paragraph: FC<{}> = ({ children }) => {
-  return <StyledParagraph>{children}</StyledParagraph>;
+export const Paragraph: FC<ParagraphProps> = ({ className, children }) => {
+  return <StyledParagraph className={className}>{children}</StyledParagraph>;
 };

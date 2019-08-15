@@ -1,12 +1,10 @@
 import React, { FC } from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
+import { Paragraph } from '../../components';
 import { colors } from './colors';
 
 interface CircleProps {
-  /**
-   * Function to call when button is clicked
-   */
   colour: string;
 }
 
@@ -18,30 +16,38 @@ const StyledCircle = styled.div<CircleProps>`
   background-color: ${props => props.colour};
 `;
 
-const DarkBackground = styled.div`
-  background-color: ${colors.dark.accent};
-  padding: 20px;
+const StyledParagraph = styled(Paragraph)<{ colour: string }>`
+  color: ${props => props.colour};
+  line-height: 100px;
 `;
 
-const LightBackground = styled.div`
-  background-color: ${colors.light.accent};
+const Container = styled.div<{ colour?: string }>`
+  background-color: ${props => props.colour};
   padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 `;
 
 const Circle: FC<CircleProps> = ({ colour }) => {
   return <StyledCircle colour={colour} />;
 };
 
-storiesOf('Tokens | Colours', module).add('Light', () => (
-  <LightBackground>
-    <Circle colour={colors.light.primary} />
-    <Circle colour={colors.light.body} />
-  </LightBackground>
-));
+storiesOf('Tokens | Colours', module).add('Palette', () => (
+  <Container>
+    <StyledParagraph colour={colors.light.body}>Light</StyledParagraph>
+    <Container colour={colors.light.accent}>
+      <Circle colour={colors.light.primary} />
+      <StyledParagraph colour={colors.light.body}>Primary</StyledParagraph>
+      <Circle colour={colors.light.body} />
+      <StyledParagraph colour={colors.light.body}>Body</StyledParagraph>
+    </Container>
+    <StyledParagraph colour={colors.light.body}>Dark</StyledParagraph>
 
-storiesOf('Tokens | Colours', module).add('Dark', () => (
-  <DarkBackground>
-    <Circle colour={colors.dark.primary} />
-    <Circle colour={colors.dark.body} />
-  </DarkBackground>
+    <Container colour={colors.dark.accent}>
+      <Circle colour={colors.dark.primary} />
+      <StyledParagraph colour={colors.dark.body}>Primary</StyledParagraph>
+      <Circle colour="white" />
+      <StyledParagraph colour={colors.dark.body}>Body</StyledParagraph>
+    </Container>
+  </Container>
 ));

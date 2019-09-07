@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import styled from 'styled-components';
 import { font, colors } from '../../tokens';
 
-interface ButtonProps {
+export interface ButtonProps {
   /**
    * Function to call when button is clicked
    */

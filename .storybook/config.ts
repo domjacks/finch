@@ -2,10 +2,8 @@ import { configure, addDecorator, addParameters } from '@storybook/react';
 import { create } from '@storybook/theming';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
-import { withInfo } from '@storybook/addon-info';
 
 addDecorator(withA11y);
-addDecorator(withInfo({ inline: true }));
 addDecorator(withKnobs);
 
 const theme = create({
@@ -27,9 +25,6 @@ const componentStories = require.context(
   /stories\.tsx$/
 );
 const tokenStories = require.context(`../src/tokens/`, true, /stories\.tsx$/);
-function loadStories() {
-  componentStories.keys().forEach(filename => componentStories(filename));
-  tokenStories.keys().forEach(filename => tokenStories(filename));
-}
 
-configure(loadStories, module);
+configure(componentStories, module);
+configure(tokenStories, module);

@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import styled from 'styled-components';
 import { font, colors } from '../../tokens';
 
-interface ParagraphProps {
+export interface ParagraphProps {
   className?: string;
 }
 

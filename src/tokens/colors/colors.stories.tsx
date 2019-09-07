@@ -1,8 +1,7 @@
-import React, { FC } from 'react';
-import { storiesOf } from '@storybook/react';
-import styled from 'styled-components';
-import { Paragraph } from '../../components';
-import { colors } from './colors';
+import React, { FC } from "react";
+import styled from "styled-components";
+import { Paragraph } from "../../components";
+import { colors } from "./colors";
 
 interface CircleProps {
   color: string;
@@ -13,16 +12,16 @@ const StyledCircle = styled.div<CircleProps>`
   width: 100px;
   margin: 20px;
   border-radius: 50%;
-  background-color: ${props => props.color};
+  background-color: ${(props) => props.color};
 `;
 
 const StyledParagraph = styled(Paragraph)<{ color: string }>`
-  color: ${props => props.color};
+  color: ${(props) => props.color};
   line-height: 100px;
 `;
 
 const Container = styled.div<{ color?: string }>`
-  background-color: ${props => props.color};
+  background-color: ${(props) => props.color};
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -32,7 +31,7 @@ const Circle: FC<CircleProps> = ({ color }) => {
   return <StyledCircle color={color} />;
 };
 
-export default { title: 'Tokens | Colors' };
+export default { title: "Tokens | Colors" };
 
 export const palette = () => (
   <Container>

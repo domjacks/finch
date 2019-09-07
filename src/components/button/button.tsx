@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import { font, colors } from '../../tokens';
+import { colors, font } from '../../tokens';
 
 export interface ButtonProps {
   /**

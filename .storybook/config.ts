@@ -18,7 +18,7 @@ addParameters({
   },
 });
 
-// // automatically import all files ending in *.stories.js
+// automatically import all files ending in *.stories.js
 const componentStories = require.context(
   `../src/components/`,
   true,

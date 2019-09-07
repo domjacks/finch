@@ -6,7 +6,7 @@ notifications:
 node_js:
   - '10'
 script:
-  - npm run build-storybook
+  - npm run build-docs
 after_success:
   - npm run snapshot
 branches:

@@ -1,1 +1,1 @@
-export { font } from "./typography";
+export { font } from './typography';

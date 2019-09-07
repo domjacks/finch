@@ -1,7 +1,7 @@
-import React, { FC } from "react";
-import styled from "styled-components";
-import { Paragraph } from "../../components";
-import { colors } from "./colors";
+import React, { FC } from 'react';
+import styled from 'styled-components';
+import { Paragraph } from '../../components';
+import { colors } from './colors';
 
 interface CircleProps {
   color: string;
@@ -31,7 +31,7 @@ const Circle: FC<CircleProps> = ({ color }) => {
   return <StyledCircle color={color} />;
 };
 
-export default { title: "Tokens | Colors" };
+export default { title: 'Tokens | Colors' };
 
 export const palette = () => (
   <Container>

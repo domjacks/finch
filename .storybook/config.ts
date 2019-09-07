@@ -18,13 +18,4 @@ addParameters({
   },
 });
 
-// automatically import all files ending in *.stories.js
-const componentStories = require.context(
-  `../src/components/`,
-  true,
-  /stories\.tsx$/
-);
-const tokenStories = require.context(`../src/tokens/`, true, /stories\.tsx$/);
-
-configure(componentStories, module);
-configure(tokenStories, module);
+configure(require.context('../src/', true, /stories\.tsx$/), module);

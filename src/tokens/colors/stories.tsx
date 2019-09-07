@@ -32,7 +32,9 @@ const Circle: FC<CircleProps> = ({ colour }) => {
   return <StyledCircle colour={colour} />;
 };
 
-storiesOf('Tokens | Colours', module).add('Palette', () => (
+export default { title: 'Tokens | Colours' };
+
+export const palette = () => (
   <Container>
     <StyledParagraph colour={colors.light.body}>Light</StyledParagraph>
     <StyledParagraph colour={colors.light.body}>Dark</StyledParagraph>
@@ -55,4 +57,4 @@ storiesOf('Tokens | Colours', module).add('Palette', () => (
       <StyledParagraph colour={colors.dark.body}>Body</StyledParagraph>
     </Container>
   </Container>
-));
+);

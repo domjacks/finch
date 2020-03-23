@@ -26,6 +26,7 @@
     "posttest": "npm run check",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o ./public",
+    "build-docs": "build-storybook -o ./public --docs",
     "snapshot": "PERCY_TOKEN=$PERCY_TOKEN percy-storybook --widths=320,1280 --build_dir=public"
   },
   "devDependencies": {

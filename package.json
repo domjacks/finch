@@ -21,13 +21,14 @@
     "fix": "tslint -p . --fix",
     "clean": "rm -rf ./build/ ./public/",
     "compile": "tsc -p .",
-    "prepare": "npm run compile",
+    "prepare": "npm run snyk-protect && npm run compile",
     "pretest": "npm run compile",
     "posttest": "npm run check",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o ./public",
     "build-docs": "build-storybook -o ./public --docs",
-    "snapshot": "PERCY_TOKEN=$PERCY_TOKEN percy-storybook --widths=320,1280 --build_dir=public"
+    "snapshot": "PERCY_TOKEN=$PERCY_TOKEN percy-storybook --widths=320,1280 --build_dir=public",
+    "snyk-protect": "snyk protect"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -60,6 +61,8 @@
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "styled-components": "^4.3.2"
-  }
+    "styled-components": "^4.3.2",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }

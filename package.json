@@ -40,7 +40,7 @@
     "@storybook/addon-viewport": "5.2.0-rc.8",
     "@storybook/addons": "5.2.0-rc.8",
     "@storybook/react": "5.2.0-rc.8",
-    "@storybook/theming": "5.2.0-rc.8",
+    "@storybook/theming": "6.0.22",
     "@types/jest": "^24.0.16",
     "@types/react": "^16.8.24",
     "@types/react-dom": "^16.8.5",

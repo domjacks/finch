@@ -2,7 +2,7 @@ import { Button } from './Button';
 
 // More on how to set up stories at: https://storybook.js.org/docs/preact/writing-stories/introduction
 export default {
-  title: 'Example/Button',
+  title: 'Components/Button',
   component: Button,
   tags: ['autodocs'],
   argTypes: {

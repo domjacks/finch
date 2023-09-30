@@ -1,9 +1,8 @@
 # 🐦 Finch
 
 [![Storybook](https://cdn.jsdelivr.net/gh/storybooks/brand@master/badge/badge-storybook.svg)](https://domjacks.github.io/finch)
-[![Build Status](https://travis-ci.org/domjacks/finch.svg?branch=master)](https://travis-ci.org/domjacks/finch)
+[![Github Pages Build status](https://github.com/domjacks/finch/actions/workflows/publish-storybook.yml/badge.svg)](https://github.com/domjacks/finch/actions/workflows/publish-storybook.yml)
 [![npm: finch-design-system](https://img.shields.io/npm/v/finch-design-system)](https://www.npmjs.com/package/finch-design-system)
-[![Known Vulnerabilities](https://snyk.io//test/github/domjacks/finch/badge.svg?targetFile=package.json)](https://snyk.io//test/github/domjacks/finch?targetFile=package.json)
 [![Licence](https://img.shields.io/github/license/domjacks/finch)](https://opensource.org/licenses/MIT)
 
 An opinionated Design System.

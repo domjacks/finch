@@ -1,5 +1,7 @@
+import styles from './Button.module.scss'
+
 const Button = () => {
-    return <button>World</button>
+    return <button class={styles.button}>World</button>
 }
 
 export { Button }

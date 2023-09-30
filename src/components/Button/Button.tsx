@@ -1,7 +1,7 @@
 import styles from './Button.module.scss'
 
-const Button = () => {
-    return <button class={styles.button}>World</button>
+const Button = ({ label, onClick }) => {
+    return <button onClick={onClick} class={styles.button}>{label}</button>
 }
 
 export { Button }

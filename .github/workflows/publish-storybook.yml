@@ -33,7 +33,7 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - run: npm build-storybook
+      - run: npm run build-storybook
   deploy:
     environment:
       name: github-pages

@@ -10,11 +10,20 @@ export default {
   },
 };
 
-// More on writing stories with args: https://storybook.js.org/docs/preact/writing-stories/args
-export const Primary = {
+export const Small = {
   args: {
     primary: true,
     title: 'This is a card',
+    size: 'small',
+    children: <p>I am the content</p>
+  },
+};
+
+export const Large = {
+  args: {
+    primary: true,
+    title: 'This is a card',
+    size: 'large',
     children: <p>I am the content</p>
   },
 };

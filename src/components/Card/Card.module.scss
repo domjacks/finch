@@ -1,7 +1,17 @@
 .card {
     border: 1px solid black;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.small {
     width: 280px;
-    padding: 5px;
+    min-height: 280px;
+}
+
+.large {
+    width: 560px;
+    min-height: 280px;
 }
 
 .title {

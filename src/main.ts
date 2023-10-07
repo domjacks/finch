@@ -1,3 +1,6 @@
-import { Button } from './components/Button/Button'
+import("./tokens/styles.scss")
 
-export { Button }
+import { Button } from './components/Button/Button'
+import { Card } from './components/Card/Card'
+
+export { Button, Card }

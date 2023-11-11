@@ -1,13 +1,22 @@
 import { Card } from './Card';
+import { Button } from '../Button/Button'
 
-// More on how to set up stories at: https://storybook.js.org/docs/preact/writing-stories/introduction
+const CardContent = () => {
+  return (
+    <>
+      <p>This is the card content</p>
+      <Button label="Click me"/>
+    </>
+  )
+}
+
 export default {
   title: 'Components/Card',
   component: Card,
   tags: ['autodocs'],
   argTypes: {
     onClick: { action: 'onClick' },
-  },
+  },                    
 };
 
 export const Small = {
@@ -15,8 +24,8 @@ export const Small = {
     primary: true,
     title: 'This is a card',
     size: 'small',
-    children: <p>I am the content</p>
-  },
+    children: <CardContent />
+  },              
 };
 
 export const Large = {
@@ -24,6 +33,6 @@ export const Large = {
     primary: true,
     title: 'This is a card',
     size: 'large',
-    children: <p>I am the content</p>
+    children: <CardContent />
   },
 };

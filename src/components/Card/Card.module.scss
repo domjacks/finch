@@ -1,5 +1,5 @@
 .card {
-    border: 1px solid black;
+    border: 2px solid var(--light-primary);
     border-radius: 20px;
     padding: 40px;
 }
@@ -15,8 +15,12 @@
 }
 
 .title {
-    font-family: 'Open Sans', serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 700;
     color: var(--light-body);
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
 }

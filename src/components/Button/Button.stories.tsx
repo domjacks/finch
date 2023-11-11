@@ -1,6 +1,6 @@
 import { Button } from './Button';
+import Logo from "../../icons/arrow-right.svg?react";
 
-// More on how to set up stories at: https://storybook.js.org/docs/preact/writing-stories/introduction
 export default {
   title: 'Components/Button',
   component: Button,
@@ -10,30 +10,16 @@ export default {
   },
 };
 
-// More on writing stories with args: https://storybook.js.org/docs/preact/writing-stories/args
-export const Primary = {
+export const Regular = {
   args: {
-    primary: true,
-    label: 'Button',
-  },
-};
-
-export const Secondary = {
-  args: {
-    label: 'Button',
-  },
-};
-
-export const Large = {
-  args: {
-    size: 'large',
-    label: 'Button',
+    Icon: Logo,
+    label: 'Regular Button',
   },
 };
 
 export const Small = {
   args: {
     size: 'small',
-    label: 'Button',
+    label: 'Small Button',
   },
 };

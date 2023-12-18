@@ -44,7 +44,7 @@
     "sass": "^1.68.0",
     "storybook": "^7.4.6",
     "typescript": "^5.2.2",
-    "vite": "^4.3.2",
+    "vite": "^5.0.10",
     "vite-plugin-svgr": "^4.1.0"
   },
   "dependencies": {

@@ -12,7 +12,7 @@ An opinionated Design System.
 Building components
 
 - 🔵 [Typescript](https://www.typescriptlang.org/) for type-safe superset of Javascript
-- ⚛️ [Preact](https://preactjs.com/)](https://reactjs.org/) declarative component-centric UI
+- ⚛️ [Preact](https://preactjs.com/) declarative component-centric UI
 - 📚 [Storybook](https://storybook.js.org) for UI component development
 - [Smoothie Lines Icons](https://www.svgrepo.com/collection/smoothie-line-icons/) for SVGs
 - [Open Sans](https://fonts.google.com/specimen/Open+Sans) for fonts
